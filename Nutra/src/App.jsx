@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react";
 import { useProducts } from "./hooks/useProducts";
 import MainLayout from "./layouts/MainLayout";
@@ -39,6 +40,7 @@ function App() {
           />
         </Route>
       </Routes>
+      <SpeedInsights />
       <Analytics />
     </>
   );
